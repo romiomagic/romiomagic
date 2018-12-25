@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+
+	
+	<link rel="stylesheet" href="css/style2.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Опрос</title>
+</head>
+<body>
+	<div class="container">
+		
+		<ul class="questions">
+			<li>
+				<div class="wrapper">
+					<div class="item"><span class="number">1</span><span class="glyphicon glyphicon-arrow-right"></span></div>
+					<div class="question"><h4>Ваша группа*</h4></div>
+					<div class="content">
+						<div class="input-field">
+          				<input id="group" type="text" name="group-name" class="validate" required>
+          				<label for="group">Например, КТмо1-7</label>
+        				</div>
+						
+					</div>
+				</div>
+			</li>
+
+			<li>
+				<div class="wrapper">
+					<div class="item"><span class="number">2</span><span class="glyphicon glyphicon-arrow-right"></span></div>
+					<div class="question"><h4>Пол*</h4></div>
+					<div class="content">
+						<div class="sex">
+							<p>
+						      <input class="sex-choice" name="group1" type="radio" id="test1"/>
+						      <label for="test1">Мужской</label>
+						    </p>
+						    <p>
+						      <input class="sex-choice" name="group1" type="radio" id="test2"/>
+						      <label for="test2">Женский</label>
+						    </p>
+						</div>   
+						
+					</div>
+				</div>
+			</li>
+
+			<li>
+				<div class="wrapper">
+					<div class="item"><span class="number">3</span><span class="glyphicon glyphicon-arrow-right"></span></div>
+					<div class="question"><h4>Желание получить диплом о высшем образовании*</h4></div>
+					<div class="content">
+						<div id="reviewStars-input">
+						    <input id="star-4" type="radio" name="reviewStars"/>
+						    <label title="5" for="star-4"></label>
+
+						    <input id="star-3" type="radio" name="reviewStars"/>
+						    <label title="4" for="star-3"></label>
+
+						    <input id="star-2" type="radio" name="reviewStars"/>
+						    <label title="3" for="star-2"></label>
+
+						    <input id="star-1" type="radio" name="reviewStars"/>
+						    <label title="2" for="star-1"></label>
+
+						    <input id="star-0" type="radio" name="reviewStars"/>
+						    <label title="1" for="star-0"></label>
+						</div>
+						<div class="clearfix"></div>								
+					</div>
+				</div>
+			</li>
+			
+			<li>
+				<div class="wrapper">
+					<div class="item"><span class="number">4</span><span class="glyphicon glyphicon-arrow-right"></span></div>
+					<div class="question"><h4>До поступления в вуз Вы проживали в Таганроге?*</h4></div>
+					<div class="content">
+						<p>
+							<input class="with-gap" name="group2" type="radio" id="test3" />
+						    <label for="test3">Да</label>
+						</p>
+						<p>
+						    <input class="with-gap" name="group2" type="radio" id="test4" />
+						    <label for="test4">Нет (укажите где)</label>
+						    <div class="input-field alternative">
+          					<input id="city" type="text" class="validate" required>
+          					<label for="city">Например, Ростов-на-Дону</label>
+        				</div>
+						</p>
+					</div>
+				</div>
+			</li>
+
+			<li>
+				<div class="wrapper">
+					<div class="item"><span class="number">5</span><span class="glyphicon glyphicon-arrow-right"></span></div>
+					<div class="question"><h4>Подавали ли Вы заявления в другие вузы?*</h4></div>
+					<div class="content">
+						<p>
+					      <input type="checkbox" id="test5" />
+					      <label for="test5">да, в вуз расположенный в Таганроге</label>
+					    </p>
+					    <p>
+					      <input type="checkbox" id="test6" />
+					      <label for="test6">да, в вуз расположенный в Ростове-на-Дону</label>
+					    </p>
+					    <p>
+					      <input type="checkbox" id="test7" />
+					      <label for="test7">да, в вуз расположенный в Москве</label>
+					    </p>
+					    <p>
+					      <input type="checkbox" id="test8" />
+					      <label for="test8">да, в вуз расположенный в Санкт-Петербурге</label>
+					    </p>
+					    <p>
+					      <input type="checkbox" id="test9" />
+					      <label for="test9">да, в вузы других регионов</label>
+					    </p>
+					    <p>
+					      <input type="checkbox" id="test10" />
+					      <label for="test10">нет</label>
+					    </p>
+        				
+					</div>
+				</div>
+			</li>
+
+		</ul>
+		
+		<div class="submit-button">
+			<button class="btn waves-effect waves-light btn-large" type="submit" onclick="validateGroupName(this.ul)" name="action"><a href="thanks.html">Отправить</a>
+			    <i class="material-icons right"></i>
+			 </button>
+		 </div>
+	</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script>
+	    $(function() {
+	        $(window).on("scroll resize", function() {
+	            var o = $(window).scrollTop() / ($(document).height() - $(window).height());
+	            $(".progress-bar").css({
+	                "width": (100 * o | 0) + "%"
+	            });
+	            $('progress')[0].value = o;
+	        })
+	    });
+	</script>
+
+	<progress value="0">
+	    <div class="progress-container">
+	        <span class="progress-bar"></span>
+	    </div>
+	</progress>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>	
+
+	<script src="js/toggle.js"></script>
+	<script src="js/validate.js"></script>
+
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+          
+</body>
+</html>

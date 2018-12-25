@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+
+.container {
+	margin-bottom: 50px;
+}
+
+@media (min-width: 1367px) {
+ .container {
+ 	margin-top: 100px;
+
+ }
+}
+
+.logo-sfedu {
+	max-height: 300px;
+}
+
+.lead {
+	font-family: 'PT Sans', sans-serif;
+	max-width: 700px;
+}
+
+
+.btn-shadow {
+	box-shadow: 9px 12px 33px 0px;
+}
+
+a.waves-effect {
+	text-decoration: none;
+	color: #fff;
+}
+a:hover.waves-effect {
+	color: #000;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+span {
+	font-weight: 800;
+}
+
+.centered {
+	display:block;
+	width: 250px;
+}
+@media (max-width: 767px){
+  h1 {
+  	font-size: 24px;
+  }
+
+}
+
+/*@media (max-width: 576px) {
+	.logo-sfedu {
+	height: 200px;	
+}*/
+	h1.margin-bottom {
+		margin-bottom: 20px;
+	}
+
+}
